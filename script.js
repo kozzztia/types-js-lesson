@@ -76,12 +76,16 @@ console.log("start")
 // doPolindrom();
 
 
-function getMoney(){
-    const money = prompt('insert your money');
-    const mounthes = 12
-    const procentForMonth = (+money * .05) / 12;
-    const result = +money + (procentForMonth * mounthes)
-    alert(`you can get ${result}`);
-}
+// function getMoney(){
+//     const money = prompt('insert your money');
+//     const mounthes = 12
+//     const procentForMonth = (+money * .05) / 12;
+//     const result = +money + (procentForMonth * mounthes)
+//     alert(`you can get ${result}`);
+// }
 
-getMoney()
+// getMoney()
+
+console.log( `${2 && 0 && 3}` + "first");
+console.log(  `${2 || 0 || 3}` + "second");
+console.log( `${2 && 0 || 3}` + "third");
