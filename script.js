@@ -41,17 +41,28 @@ console.log("start")
 // }    
 // getsize()
 
-function countChocolate() {
-    const cost = 15.5;
-    const money = prompt('how many money do you have?')
-    if (!+money) countChocolate()
+// function countChocolate() {
+//     const cost = 15.5;
+//     const money = prompt('how many money do you have?')
+//     if (!+money) countChocolate()
+//     else {
+//        const chocolats = Math.trunc(money / cost);
+//        const left = money -(chocolats * cost);
+
+//        alert(`you cat buy ${chocolats} cocolats and left ${left}$`)
+//     }
+
+// }
+
+// countChocolate()
+
+function doPolindrom(){
+    const number = prompt('insert three digit number')
+    if(!+number) doPolindrom();
     else {
-       const chocolats = Math.trunc(money / cost);
-       const left = money -(chocolats * cost);
-
-       alert(`you cat buy ${chocolats} cocolats and left ${left}$`)
+        const revesed = number.split("").reverse().join("")
+        alert(`your number is ${number}, and we make this - ${revesed}`)
     }
-
 }
 
-countChocolate()
+doPolindrom()
