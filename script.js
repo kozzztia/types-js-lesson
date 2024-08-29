@@ -57,13 +57,20 @@ console.log("start")
 // countChocolate()
 
 function doPolindrom(){
-    const number = prompt('insert three digit number')
+    const number = prompt('insert three digit number');
     // if (!number || isNaN(number) || number.length !== 3)doPolindrom();
     if(!+number || number.length < 3)doPolindrom();
     else {
         const revesedNumber = number.split("").reverse().join("");
-        alert(`your number is ${number}, and we make this - ${revesedNumber}`);
+        if(number === revesedNumber) {
+            alert(`your number is ${number}, it can be polindrome`);
+            alert('you are greate');
+        }
+        else  {
+            alert(`your number is ${number},  and we make this - ${revesedNumber}`);
+            doPolindrom()
+        };
     };
-}
+};
 
-doPolindrom()
+doPolindrom();
