@@ -1,5 +1,5 @@
 console.log("start")
-
+// first
 // const a = "0,1";
 // const b = "0,2";
 
@@ -14,6 +14,7 @@ console.log("start")
 
 // sum(a,b)
 
+// second
 // const c = "1";
 // const d = 2;
 
@@ -23,20 +24,34 @@ console.log("start")
 
 
 
+// third
+// function getsize(){
+//     let data;
+//     const fileSize = 820;
+//     const translateToGb = 0.001;
+//     data = prompt('insert memory size as GB')
+//     if(!+data) {
+//         alert("try inser only number")
+//         getsize()
+//     }else{
+//         let result = Math.floor((data/translateToGb)/fileSize);
+//         let resultSize = (result * fileSize)*translateToGb;
+//         alert(`you can put ${result}and use ${resultSize.toFixed(2)}Gb`)
+//     }
+// }    
+// getsize()
 
-function getsize(){
-    let data;
-    const fileSize = 820;
-    const translateToGb = 0.001;
-    data = prompt('insert memory size as GB')
-    if(!+data) {
-        alert("try inser only number")
-        getsize()
-    }else{
-        let result = Math.floor((data/translateToGb)/fileSize);
-        let resultSize = (result * fileSize)*translateToGb;
-        alert(`you can put ${result}and use ${resultSize.toFixed(2)}Gb`)
+function countChocolate() {
+    const cost = 15.5;
+    const money = prompt('how many money do you have?')
+    if (!+money) countChocolate()
+    else {
+       const chocolats = Math.trunc(money / cost);
+       const left = money -(chocolats * cost);
+
+       alert(`you cat buy ${chocolats} cocolats and left ${left}$`)
     }
-}    
 
-getsize()
+}
+
+countChocolate()
