@@ -58,11 +58,12 @@ console.log("start")
 
 function doPolindrom(){
     const number = prompt('insert three digit number')
-    if(!+number) doPolindrom();
+    // if (!number || isNaN(number) || number.length !== 3)doPolindrom();
+    if(!+number || number.length < 3)doPolindrom();
     else {
-        const revesed = number.split("").reverse().join("")
-        alert(`your number is ${number}, and we make this - ${revesed}`)
-    }
+        const revesedNumber = number.split("").reverse().join("");
+        alert(`your number is ${number}, and we make this - ${revesedNumber}`);
+    };
 }
 
 doPolindrom()
